@@ -18,11 +18,11 @@ class DyabloFieldInfo(FieldInfoContainer):
     """Field info container for Dyablo code."""
 
     known_other_fields: KnownFieldsT = (
-        ("rho", (rho_units, ["density"], None)),
-        ("rho_vx", (mom_units, ["density_times_velocity_x"], None)),
-        ("rho_vy", (mom_units, ["density_times_velocity_y"], None)),
-        ("rho_vz", (mom_units, ["density_times_velocity_z"], None)),
-        ("e_tot", (en_units, ["total_energy_density"], None)),
+        ("rho", (rho_units, ["density"], r"\rho")),
+        ("rho_vx", (mom_units, ["density_times_velocity_x"], r"\rho v_x")),
+        ("rho_vy", (mom_units, ["density_times_velocity_y"], r"\rho v_y")),
+        ("rho_vz", (mom_units, ["density_times_velocity_z"], r"\rho v_z")),
+        ("e_tot", (en_units, ["total_energy_density"], r"E_\mathrm{tot}")),
         ("metallicity", ("dimensionless", ["metallicity"], None)),
     )
 
